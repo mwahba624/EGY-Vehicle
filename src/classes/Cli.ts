@@ -1,11 +1,8 @@
 // importing classes from other files
-
 import inquirer from "inquirer";
 import Truck from "./Truck.js";
 import Car from "./Car.js";
 import Motorbike from "./Motorbike.js";
-
-
 
 // define the Cli class
 class Cli { // add the export keyword to export the class
@@ -393,7 +390,7 @@ class Cli { // add the export keyword to export the class
             }
           }
           // TODO: add statements to perform the tow action only if the selected vehicle is a truck. Call the findVehicleToTow method to find a vehicle to tow and pass the selected truck as an argument. After calling the findVehicleToTow method, you will need to return to avoid instantly calling the performActions method again since findVehicleToTow is asynchronous.
-        } else if(answers.action === 'Tow') {
+        } else if(answers.action === 'Tow') { // check if the selected vehicle is a truck
           const selectedVehicle = this.vehicles[this.vehicles.findIndex(vehicle => vehicle.vin === this.selectedVehicleVin)]
 
           if (selectedVehicle instanceof Truck){
@@ -430,8 +427,8 @@ class Cli { // add the export keyword to export the class
       });
   }
 
-  // method to start the cli
-  startCli(): void {
+  
+  startCli(): void { // method to start the cli
     inquirer
       .prompt([
         {
