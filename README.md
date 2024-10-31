@@ -35,7 +35,6 @@ N/A
 
 ## License 
   [https://opensource.org/license/mit](https://opensource.org/license/mit)
-  ;
 
 ## Questions
 GitHub Account: [https://github.com/mwahba624/EGY-Vehicle](https://github.com/mwahba624/EGY-Vehicle)
