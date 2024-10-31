@@ -32,12 +32,13 @@ N/A
 
 ## Walkthrough Video
 
+[Walkthrough Video](https://app.screencastify.com/v2/manage/videos/Ps7DxZBIQzXUxEClQHT8)
 
 ## License 
   [https://opensource.org/license/mit](https://opensource.org/license/mit)
 
 ## Questions
-GitHub Account: [https://github.com/mwahba624/EGY-Vehicle](https://github.com/mwahba624/EGY-Vehicle)
+GitHub Account: [Vehicle Builder](https://github.com/mwahba624/EGY-Vehicle)
 
 Reach me if you have more Questions: mwahba624@gmail.com
 

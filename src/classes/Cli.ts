@@ -18,15 +18,14 @@ class Cli { // add the export keyword to export the class
 
   // static method to generate a vin
   static generateVin(): string {
-    // return a random string
-    return (
+    return ( // return a random string
       Math.random().toString(36).substring(2, 15) +
       Math.random().toString(36).substring(2, 15)
     );
   }
 
-  // method to choose a vehicle from existing vehicles
-  chooseVehicle(): void {
+  
+  chooseVehicle(): void { // create a method to choose a vehicle
     inquirer
       .prompt([
         {
@@ -49,8 +48,8 @@ class Cli { // add the export keyword to export the class
       });
   }
 
-  // method to create a vehicle
-  createVehicle(): void {
+  
+  createVehicle(): void { // create a method to create a vehicle
     inquirer
       .prompt([
         {
@@ -195,7 +194,7 @@ class Cli { // add the export keyword to export the class
       });
   }
 
-  // method to create a motorbike
+  
   createMotorbike(): void { // create a method to create a motorbike
     inquirer
       .prompt([
@@ -291,11 +290,7 @@ class Cli { // add the export keyword to export the class
       ])
       .then((answers) => {
 
-        // TODO: check if the selected vehicle is the truck
-        // TODO: if it is, log that the truck cannot tow itself then perform actions on the truck to allow the user to select another action
-        // TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
-
-
+      
         if (answers.vehicleToTow.vin === truck.vin) { // check if the selected vehicle is the truck
           console.log('Truck cannot tow itself');
             this.performActions();
@@ -306,8 +301,7 @@ class Cli { // add the export keyword to export the class
       });
   }
 
-  // method to perform actions on a vehicle
-  performActions(): void {
+  performActions(): void { // add a method to perform actions on a vehicle
     inquirer
       .prompt([
         {
