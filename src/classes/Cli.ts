@@ -287,7 +287,7 @@ class Cli {
 
   // method to find a vehicle to tow
   // TODO: add a parameter to accept a truck object
-  findVehicleToTow(truck: Truck): void {
+  findVehicleToTow(truck: Truck): void { // add a parameter to accept a truck object
     inquirer
       .prompt([
         {
@@ -309,7 +309,7 @@ class Cli {
         // TODO: if it is not, tow the selected vehicle then perform actions on the truck to allow the user to select another action
 
 
-        if (answers.vehicleToTow.vin === truck.vin) {
+        if (answers.vehicleToTow.vin === truck.vin) { // check if the selected vehicle is the truck
           console.log('Truck cannot tow itself');
             this.performActions();
         }else {
@@ -328,7 +328,7 @@ class Cli {
           name: 'action',
           message: 'Select an action',
           // TODO: add options to tow and wheelie
-          choices: [
+          choices: [ // add the tow and wheelie actions to the list of choices
             'Print details',
             'Start vehicle',
             'Accelerate 5 MPH',
@@ -415,7 +415,7 @@ class Cli {
         
         // TODO: add statements to perform the wheelie action only if the selected vehicle is a motorbike
 
-        } else if (answers.action === 'Wheelie'){
+        } else if (answers.action === 'Wheelie'){ // check if the selected vehicle is a motorbike
           const selectedVehicle = this.vehicles[this.vehicles.findIndex(vehicle => vehicle.vin === this.selectedVehicleVin)]
          
           if (selectedVehicle instanceof Motorbike){
